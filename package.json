@@ -1,0 +1,63 @@
+{
+  "name": "commit-genius-js",
+  "version": "1.0.0",
+  "description": "🚀 Smart commit message generator with AI - supports local LLMs and cloud APIs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "cmg": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/cli.js",
+    "dev": "ts-node src/cli.ts",
+    "test": "jest",
+    "lint": "eslint . --ext .ts",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "git",
+    "commit",
+    "ai",
+    "conventional-commits",
+    "ollama",
+    "openai",
+    "cli"
+  ],
+  "author": "vcbodheesh@gmail.com",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/commit-genius-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/commit-genius-js/issues"
+  },
+  "homepage": "https://github.com/yourusername/commit-genius-js#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "commander": "^11.1.0",
+    "simple-git": "^3.22.0",
+    "chalk": "^4.1.2",
+    "inquirer": "^8.2.6",
+    "openai": "^4.24.1",
+    "node-fetch": "^2.7.0",
+    "conf": "^10.2.0",
+    "ora": "^5.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "@types/inquirer": "^8.2.10",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "typescript": "^5.3.3",
+    "ts-node": "^10.9.2",
+    "jest": "^29.7.0",
+    "@types/jest": "^29.5.11",
+    "ts-jest": "^29.1.1",
+    "husky": "^8.0.3",
+    "eslint": "^8.56.0"
+  }
+}
